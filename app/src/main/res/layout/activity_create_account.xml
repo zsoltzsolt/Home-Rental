@@ -1,9 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateAccountActivity">
+    tools:context=".CreateAccountActivity"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background3">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inregistrare"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_full_name"
+        style="@style/TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="60dp"
+        android:hint="Numele complet">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_full_name"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_layout_shape"
+            android:elevation="@dimen/cardview_default_radius" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="12dp"
+        style="@style/TextInputLayout"
+        android:hint="Adresa de email"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_layout_shape"
+            android:elevation="@dimen/cardview_default_radius"
+            style="@style/TextInputEditText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="12dp"
+        style="@style/TextInputLayout"
+        android:hint="Nume utilizator"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_layout_shape"
+            android:elevation="@dimen/cardview_default_radius"
+            style="@style/TextInputEditText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_password1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="12dp"
+        style="@style/TextInputLayout"
+        android:hint="Parola"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_layout_shape"
+            android:elevation="@dimen/cardview_default_radius"
+            style="@style/TextInputEditText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_password2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="12dp"
+        style="@style/TextInputLayout"
+        android:hint="Confirma parola"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_layout_shape"
+            android:elevation="@dimen/cardview_default_radius"
+            style="@style/TextInputEditText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Client"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proprietar"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/white"
+        android:text="CREEAZA CONT"
+        android:textColor="@color/purple_500"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_goToLogin"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ai deja un cont?"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+
+
+
+</LinearLayout>
