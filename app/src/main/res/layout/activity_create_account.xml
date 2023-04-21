@@ -95,6 +95,7 @@
             android:background="@drawable/text_input_layout_shape"
             android:elevation="@dimen/cardview_default_radius"
             style="@style/TextInputEditText"
+            android:inputType="textPassword"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -115,6 +116,7 @@
             android:background="@drawable/text_input_layout_shape"
             android:elevation="@dimen/cardview_default_radius"
             style="@style/TextInputEditText"
+            android:inputType="textPassword"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -125,12 +127,14 @@
         android:orientation="horizontal">
 
         <RadioGroup
+            android:id="@+id/radio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
 
         <RadioButton
+            android:id="@+id/rb1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Client"
@@ -139,6 +143,7 @@
 
             />
         <RadioButton
+            android:id="@+id/rb2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Proprietar"
@@ -153,9 +158,8 @@
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:backgroundTint="@color/white"
         android:text="CREEAZA CONT"
-        android:textColor="@color/purple_500"
+        style="@style/GreyButton"
         android:layout_marginHorizontal="20dp"
         />
 

@@ -20,7 +20,6 @@
         <item name="startIconTint">@color/purple_500</item>
         <item name="boxStrokeWidth">0dp</item>
         <item name="boxStrokeWidthFocused">0dp</item>
-
     </style>
 
     <style name="TextInputEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
@@ -35,5 +34,16 @@
     <style name="Theme.HomeRental.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.HomeRental.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="WhiteButton">
+        <item name = "android:backgroundTint">@color/white</item>
+        <item name = "android:textColor">@color/purple_500</item>
+    </style>
+
+    <style name="GreyButton">
+        <item name = "backgroundTint">@color/grey</item>
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:enabled">false</item>
+    </style>
 
 </resources>

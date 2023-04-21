@@ -69,10 +69,9 @@
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:backgroundTint="@color/white"
         android:text="AUTENTIFICARE"
         android:layout_marginTop="340dp"
-        android:textColor="@color/purple_500"
         android:layout_marginHorizontal="20dp"
+        style="@style/GreyButton"
         />
 </LinearLayout>
