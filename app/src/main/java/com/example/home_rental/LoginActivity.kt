@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.google.android.material.textfield.TextInputEditText
+import com.google.firebase.auth.FirebaseAuth
 import com.jakewharton.rxbinding2.widget.RxTextView
 import io.reactivex.Observable
 
@@ -17,6 +18,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var tv_goToRegister: TextView
     private lateinit var tie_email: TextInputEditText
     private lateinit var tie_password: TextInputEditText
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
