@@ -29,15 +29,16 @@
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="60dp"
         android:hint="Adresa de email"
-        app:boxStrokeWidth="0dp">
-
+        app:boxStrokeWidth="0dp"
+        app:startIconDrawable="@drawable/email_icon"
+        >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_email"
             style="@style/TextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/text_input_layout_shape"
-            android:elevation="@dimen/cardview_default_radius" />
+         />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -48,15 +49,15 @@
         android:layout_marginHorizontal="12dp"
         style="@style/TextInputLayout"
         android:hint="Parola"
-
+        app:startIconDrawable="@drawable/password_icon"
         >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:background="@drawable/text_input_layout_shape"
-            android:elevation="@dimen/cardview_default_radius"
             style="@style/TextInputEditText"
             android:inputType="textPassword"
             />
