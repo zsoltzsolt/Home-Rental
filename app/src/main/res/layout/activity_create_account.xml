@@ -27,7 +27,7 @@
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="60dp"
         android:hint="Numele complet"
-        app:startIconDrawable="@drawable/usernameIcon">
+        app:startIconDrawable="@drawable/username_icon">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_full_name"
@@ -45,15 +45,15 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="30dp"
-        android:hint="Adresa de email">
+        android:hint="Adresa de email"
+        app:startIconDrawable="@drawable/email_icon">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_email"
             style="@style/TextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/text_input_layout_shape"
-            android:elevation="@dimen/cardview_default_radius" />
+            android:background="@drawable/text_input_layout_shape" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -63,7 +63,9 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="30dp"
-        android:hint="Nume utilizator">
+        android:hint="Nume utilizator"
+        app:startIconDrawable="@drawable/nume_utilizator"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_username"
@@ -71,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/text_input_layout_shape"
-            android:elevation="@dimen/cardview_default_radius" />
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -81,7 +83,8 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="30dp"
-        android:hint="Parola">
+        android:hint="Parola"
+        app:startIconDrawable="@drawable/password_icon">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_password1"
@@ -89,7 +92,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/text_input_layout_shape"
-            android:elevation="@dimen/cardview_default_radius"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -100,7 +102,8 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="30dp"
-        android:hint="Confirma parola">
+        android:hint="Confirma parola"
+        app:startIconDrawable="@drawable/password_icon">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_password2"
@@ -108,7 +111,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/text_input_layout_shape"
-            android:elevation="@dimen/cardview_default_radius"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
