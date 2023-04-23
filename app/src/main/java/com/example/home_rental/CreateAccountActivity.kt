@@ -177,6 +177,10 @@ class CreateAccountActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) {
                 if(it.isSuccessful){
+                    auth.currentUser?.sendEmailVerification()
+                        ?.addOnCompleteListener {
+                            Toast.makeText(this, "Verificati email-ul!", Toast.LENGTH_SHORT).show()
+                        }
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(this, "Contul a fost creat cu succes!", Toast.LENGTH_SHORT).show()

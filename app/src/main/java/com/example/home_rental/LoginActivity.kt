@@ -76,7 +76,10 @@ class LoginActivity : AppCompatActivity() {
     private fun loginUser(email: String, password: String){
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this){ login ->
-                if (login.isSuccessful){
+                if(auth.currentUser?.isEmailVerified == false){
+                    Toast.makeText(this, "Adresa de email nu este verificata!", Toast.LENGTH_SHORT).show()
+                }
+                else if (login.isSuccessful){
                     Intent(this, HomeActivity::class.java).also {
                         it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(it)
